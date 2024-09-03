@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.devPic img {
+    height: 58vh;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    box-shadow: 10px 10px 20px rgb(194 65 12);;
+    animation: river 4s linear infinite;
+    transition: 2s all;
+
+}
+@keyframes river {
+    0%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+    50%{
+        border-radius: 3% 97% 15% 45% / 72% 0% 100% 28%;
+
+    }
+    100%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+}
+/* .width-box {
+    width: 24rem !important;
+} */
+ @media (max-width:650px) {
+    .design-on-phone{
+        flex-direction: column !important;
+    }  
+    .img-parent{
+        width: 100%;
+    }
+  
+ }
+ .h-box:hover{
+    background-color: rgb(194 65 12) !important;
+    cursor: pointer;
+}
+.h-box:hover p{
+    color: white !important;
+}
